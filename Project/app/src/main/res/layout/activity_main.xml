@@ -63,11 +63,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_launcher_background"
+        android:layout_width="74dp"
+        android:layout_height="81dp"
+        app:srcCompat="@drawable/mus"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="417dp" />
+        tools:layout_editor_absoluteY="418dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
