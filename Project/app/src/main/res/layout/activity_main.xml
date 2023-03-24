@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
     <LinearLayout
         android:layout_width="410dp"
@@ -15,40 +16,49 @@
         tools:layout_editor_absoluteY="127dp" />
 
     <RelativeLayout
-        android:layout_width="411dp"
-        android:layout_height="70dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="198dp"
-        tools:ignore="MissingConstraints">
+        android:layout_width="417dp"
+        android:layout_height="222dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="275dp">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="157dp"
+            android:layout_height="149dp"
+            app:srcCompat="@drawable/mus"
+            tools:ignore="MissingConstraints" />
     </RelativeLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="411dp"
-        android:layout_height="68dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="269dp"
-        tools:ignore="MissingConstraints">
+        android:layout_width="424dp"
+        android:layout_height="233dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
 
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:textColor="@color/yellow"
+            tools:backgroundTint="@color/green"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_editor_absoluteY="15dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_width="103dp"
+        android:layout_height="18dp"
+        android:text="@string/muz"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="52dp"
-        tools:ignore="MissingConstraints" />
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteY="52dp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="359dp"
-        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
@@ -56,18 +66,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="@string/time"
         tools:layout_editor_absoluteX="101dp"
         tools:layout_editor_absoluteY="82dp"
         tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="74dp"
-        android:layout_height="81dp"
-        app:srcCompat="@drawable/mus"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="418dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
