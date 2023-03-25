@@ -19,6 +19,7 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="Onclick"
             android:text="Button"
             android:textColor="@color/yellow"
             app:layout_constraintBottom_toBottomOf="parent"

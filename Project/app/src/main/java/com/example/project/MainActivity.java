@@ -19,17 +19,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         initUI();
-        button.setOnClickListener(new View.OnClickListener() {
+        /*button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i(TAG, "onClick: ");
                 Intent i = new Intent(MainActivity.this,MainActivity2.class);
                 startActivity(i);
             }
-        });
+        });*/
     }
 
     private void initUI(){
         button = findViewById(R.id.button);
+    }
+
+    public void Onclick(View view){
+        Log.i(TAG, "onClick: ");
     }
 }
