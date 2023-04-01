@@ -31,6 +31,7 @@ public class BlankFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        
         Log.i(TAG, "onCreateView: ");
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_blank, container, false);
@@ -56,8 +57,9 @@ public class BlankFragment extends Fragment {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
-                TextView textView = getActivity().findViewById(R.id.textView);
-                textView.setText("fsf");
+                Bundle result = new Bundle();
+                result.putString("Key", "fsf");
+                getParentFragmentManager().setFragmentResult("key",result);
             }
         });
         Log.i(TAG, "onStart: ");
