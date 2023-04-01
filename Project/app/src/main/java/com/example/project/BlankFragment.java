@@ -1,5 +1,6 @@
 package com.example.project;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -50,6 +51,15 @@ public class BlankFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
+        Button button = getActivity().findViewById(R.id.fragmentbutton);
+        button.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onClick(View view) {
+                TextView textView = getActivity().findViewById(R.id.textView);
+                textView.setText("fsf");
+            }
+        });
         Log.i(TAG, "onStart: ");
     }
 

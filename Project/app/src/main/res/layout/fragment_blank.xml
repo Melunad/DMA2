@@ -14,14 +14,13 @@
         android:layout_marginStart="165dp"
         android:layout_marginEnd="158dp"
         android:layout_marginBottom="124dp"
-        android:onClick="onCleck_fragment_button"
-        android:text="Close"
+        android:text="Изменить текст на фрагменте 2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewfragment"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.032" />
 
     <ImageView
         android:id="@+id/imageViewfragment"
