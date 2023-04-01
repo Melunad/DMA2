@@ -2,6 +2,7 @@ package com.example.project;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +15,6 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MyApp";
     Button button;
-    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,24 +26,20 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i(TAG, "onClick: ");
-
-                Intent i = new Intent(MainActivity.this,MainActivity2.class);
-                startActivityForResult(i,1);
+                BlankFragment f1 = new BlankFragment();
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.conteiner,f1);
+                ft.commit();
             }
         });
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        textView.setText("RETURN DATA");
-
-    }
 
     private void initUI(){
-        textView = findViewById(R.id.textView3);
         button = findViewById(R.id.button);
+    }
+    public void onCleck_fragment_button(View view){
+        Log.i(TAG, "onCleck_fragment_button: ");
     }
 
 }
