@@ -40,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onCleck_fragment_button(View view){
         Log.i(TAG, "onCleck_fragment_button: ");
+        onResume();
+        onPause();
+        onStop();
+        onDestroy();
     }
 
 }
